@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/images_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/eight"
+        android:numColumns="@string/no_of_column"
+        android:padding="@dimen/sixteen"
+        android:verticalSpacing="@dimen/eight"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/internet_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/noInternet"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <include layout="@layout/progress_bar" />
+</RelativeLayout>
