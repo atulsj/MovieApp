@@ -98,8 +98,10 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
         if (key.equals(getString(R.string.pref_sort_key))) {
-            if (sharedPreferences.getString(key, getString(R.string.pref_favourite_value)).equals("/movie/")) {
-                LoaderManager.LoaderCallbacks<ArrayList<MovieUtil>> ReviewerResultLoaderListener = new LoaderManager.LoaderCallbacks<ArrayList<MovieUtil>>() {
+            if (sharedPreferences.getString(key, getString(R.string.pref_favourite_value))
+                    .equals("/movie/")) {
+                LoaderManager.LoaderCallbacks<ArrayList<MovieUtil>> ReviewerResultLoaderListener
+                        = new LoaderManager.LoaderCallbacks<ArrayList<MovieUtil>>() {
 
                     @Override
                     public Loader<ArrayList<MovieUtil>> onCreateLoader(int id, Bundle args) {
@@ -110,7 +112,11 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                                 ArrayList<MovieUtil> arrayList = new ArrayList<>();
                                 Cursor cursor = null;
                                 try {
-                                    cursor = getContentResolver().query(MovieContract.MovieEntry.CONTENT_URI, null, null, null, MovieContract.MovieEntry.COLUMN_RATING + " ASC");
+                                    cursor = getContentResolver().query(
+                                            MovieContract.MovieEntry.CONTENT_URI, null,
+                                            null, null,
+                                            MovieContract.MovieEntry.COLUMN_RATING
+                                                    + " ASC");
                                     while (cursor != null && cursor.moveToNext()) {
                                         int titleColumnIndex = cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_NAME);
                                         int overviewColumnIndex = cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_OVERVIEW);

@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:gravity="center"
         android:text="@string/noInternet"
         android:textSize="20sp"
         android:visibility="invisible" />

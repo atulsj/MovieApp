@@ -18,7 +18,7 @@ android {
         }
     }
     buildTypes.each {
-        it.buildConfigField 'String', 'TMDB_DEVELOPER_KEY', '"<ENTER_YOUR_TMDB_KEY>"'
+        it.buildConfigField 'String', 'TMDB_DEVELOPER_KEY', '"c7f13b5ef29fab54f7fce041d4d7768c"'
     }
     dataBinding {
         enabled = true
