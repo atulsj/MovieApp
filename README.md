@@ -12,4 +12,11 @@ Please before using App add your TMBD key in file build.gradle(Module:app) in pl
 * The app is build using Glide image library.
 * The app opens up with the movie poster in grid format. On selecting a movie, it gives descriptions of movie and gives an option of         making a movie favorite though FAB button.
 * Preference settings are provided to display movies list based on popularity, favorite, or top rated. 
+<div>
+<img src="https://github.com/atulsj/Images/blob/master/mv_scnshot1.jpeg" height=500px>
+<img src="https://github.com/atulsj/Images/blob/master/mv_scnshoot2.jpeg" height=500px>
+<img src="https://github.com/atulsj/Images/blob/master/mv_scnshoot3.jpeg" height=500px>
+ </div>
+<img src="https://github.com/atulsj/Images/blob/master/mv_scnshoot4.jpeg" height=500px>
+
 
